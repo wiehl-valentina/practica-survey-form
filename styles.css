@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url(photos/background.jpg); 
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(115deg, #6BC7AD, #AD6BC7);
+  opacity: 0.5;
+
+  z-index: -1;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+#header {
+  padding: 32px;
+  align-self: center;
+  font-size: medium;
+  color: white;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+}
+
+#header h1 {
+  align-self: center;
+  font-size: 30px;
+  
+}
+
+#header p {
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#form-container {
+  padding: 40px 35px;
+  align-self: center;
+  width: 60%;
+  max-width: 750px;
+  background-color: rgba(186, 186, 186, 0.5);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+#form-container #survey-form .form-label {
+  display: inline-block;
+  font-family: 'Poppins';
+  color: black; 
+  position: relative;
+  padding-bottom: 5px;
+
+} 
+
+#form-container #survey-form .headings {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: bold;
+  color: #070707;
+}
+
+#form-container #survey-form .input {
+  width: 650px;
+  padding: 8px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: normal;
+  color: #1A1919;
+
+}
+
+#survey-form #radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#radio-container h3 {
+  padding: 5px;
+}
+
+#survey-form #dropdown2-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#dropdown2-container #dropdown2-label {
+  padding: 5px;
+  margin-top: 7px;
+}
+
+#survey-form #checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-container h3 {
+  padding: 5px;
+  padding-bottom: 8px;
+}
+
+.inputs textarea {
+  height: 150px;
+}
+
+#survey-form button {
+  background-color: #50BA62;
+}
